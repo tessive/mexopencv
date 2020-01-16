@@ -382,6 +382,8 @@ function s = compiler_str()
         elseif strcmp(cc.Manufacturer, 'Microsoft')
             if ~isempty(strfind(cc.Name, 'Visual'))  % Visual Studio
                 switch cc.Version
+                    case '16.0'
+                        s = 'vc15';    % VS2019 can use the VS2017 OpenCV binary.
                     case '15.0'
                         s = 'vc15';    % VS2017
                     case '14.0'
