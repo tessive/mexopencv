@@ -10,8 +10,8 @@ classdef FastLineDetector < handle
     % > using straight lines". In 2014 IEEE International Conference on
     % > Robotics and Automation (ICRA), pages 5550-5557. IEEE, 2014.
     %
-    % See also: cv.FastLineDetector.FastLineDetector, cv.LineSegmentDetector,
-    %  cv.HoughLines, houghlines
+    % See also: cv.FastLineDetector.FastLineDetector, cv.HoughLines,
+    %     houghlines
     %
 
     properties (SetAccess = private)

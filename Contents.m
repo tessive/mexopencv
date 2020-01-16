@@ -67,7 +67,6 @@
 %   cv.GeneralizedHoughGuil             - Generalized Hough transform
 %   cv.CLAHE                            - Contrast Limited Adaptive Histogram Equalization
 %   cv.Subdiv2D                         - Delaunay triangulation and Voronoi tessellation
-%   cv.LineSegmentDetector              - Line segment detector class
 %   cv.getGaussianKernel                - Returns Gaussian filter coefficients
 %   cv.getDerivKernels                  - Returns filter coefficients for computing spatial image derivatives
 %   cv.getGaborKernel                   - Returns Gabor filter coefficients

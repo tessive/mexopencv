@@ -29,7 +29,7 @@ classdef LSDDetector < handle
     % > Intelligence, 32(4):722-732, 2010.
     %
     % See also: cv.BinaryDescriptor, cv.drawKeylines,
-    %  cv.LineSegmentDetector, cv.LineIterator
+    %  cv.LineIterator
     %
 
     properties (SetAccess = private)

@@ -30,5 +30,5 @@
 % > Robust detection of lines using the progressive probabilistic hough transform.
 % > Computer Vision and Image Understanding, 78(1):119-137, 2000.
 %
-% See also: cv.HoughLines, cv.LineSegmentDetector, houghlines
+% See also: cv.HoughLines, houghlines
 %
