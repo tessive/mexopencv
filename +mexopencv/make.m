@@ -268,7 +268,7 @@ function mex_flags = mex_options(opts)
         comp_flags, link_flags, include_dirs(opts), cv_cflags, cv_libs, opts.extra);
 
     % large-array-handling API for 64-bit platforms
-    if ~mexopencv.isOctave()
+    if ~mexopencv.isOctave() && verLessThan('matlab', '9.4')
         mex_flags = ['-largeArrayDims ' mex_flags];
     end
 
