@@ -164,11 +164,6 @@ classdef TestNet
             layers = net.getLayerInputs(id);
             assert(isstruct(layers));
 
-            %if true
-            %    net.deleteLayer(lp_id);
-            %else
-            %    net.deleteLayer(lp.name);
-            %end
         end
     end
 

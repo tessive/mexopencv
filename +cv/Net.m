@@ -356,7 +356,7 @@ classdef Net < handle
             % - MVN
             % - Dropout (since it does nothing on forward pass)
             %
-            % See also: cv.Net.addLayerToPrev, cv.Net.deleteLayer, cv.Net.connect
+            % See also: cv.Net.addLayerToPrev, cv.Net.connect
             %
             id = Net_(this.id, 'addLayer', name, layerType, params);
             id = int32(id);
@@ -378,7 +378,7 @@ classdef Net < handle
             % * __id__ unique identifier of created layer, or -1 if a failure
             %   will happen.
             %
-            % See also: cv.Net.addLayer, cv.Net.deleteLayer, cv.Net.connect
+            % See also: cv.Net.addLayer, cv.Net.connect
             %
             id = Net_(this.id, 'addLayerToPrev', name, layerType, params);
             id = int32(id);
@@ -455,21 +455,6 @@ classdef Net < handle
             % See also: cv.Net.getLayerId, cv.Net.getLayer
             %
             layers = Net_(this.id, 'getLayerInputs', layerId);
-        end
-
-        function deleteLayer(this, layerId)
-            %DELETELAYER  Delete layer for the network
-            %
-            %     net.deleteLayer(layerId)
-            %
-            % ## Input
-            % * __layerId__ layer name or layer id.
-            %
-            % Warning: Not yet implemented.
-            %
-            % See also: cv.Net.addLayer
-            %
-            Net_(this.id, 'deleteLayer', layerId);
         end
 
         function connect(this, varargin)

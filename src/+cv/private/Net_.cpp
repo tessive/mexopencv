@@ -126,7 +126,7 @@ LayerParams MxArrayToLayerParams(const MxArray& arr)
                     params.set(key, val.toString());
                 else {
                     vector<string> v(val.toVector<string>());
-                    params.set(key, DictValue::arrayString(v.begin(), v.size()));
+                    params.set(key, DictValue::arrayString(v.begin(), (int)v.size()));
                 }
             }
             else if (val.isFloat()) {
@@ -134,7 +134,7 @@ LayerParams MxArrayToLayerParams(const MxArray& arr)
                     params.set(key, val.toDouble());
                 else {
                     vector<double> v(val.toVector<double>());
-                    params.set(key, DictValue::arrayReal(v.begin(), v.size()));
+                    params.set(key, DictValue::arrayReal(v.begin(), (int)v.size()));
                 }
             }
             else {
@@ -142,7 +142,7 @@ LayerParams MxArrayToLayerParams(const MxArray& arr)
                     params.set(key, val.toInt());
                 else {
                     vector<int> v(val.toVector<int>());
-                    params.set(key, DictValue::arrayInt(v.begin(), v.size()));
+                    params.set(key, DictValue::arrayInt(v.begin(), (int)v.size()));
                 }
             }
         }
@@ -434,10 +434,6 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
         nargchk(nrhs==3 && nlhs<=1);
         vector<Ptr<Layer> > layers = obj->getLayerInputs(MxArrayToLayerId(rhs[2]));
         plhs[0] = toStruct(layers);
-    }
-    else if (method == "deleteLayer") {
-        nargchk(nrhs==3 && nlhs==0);
-        obj->deleteLayer(MxArrayToLayerId(rhs[2]));
     }
     else if (method == "connect") {
         nargchk((nrhs==4 || nrhs==6) && nlhs==0);
