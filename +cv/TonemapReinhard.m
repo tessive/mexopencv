@@ -15,8 +15,7 @@ classdef TonemapReinhard < handle
     % > Visualization and Computer Graphics, IEEE Transactions on,
     % > 11(1):13-24, 2005.
     %
-    % See also: cv.Tonemap, cv.TonemapDrago, cv.TonemapDurand,
-    %  cv.TonemapMantiuk, tonemap
+    % See also: cv.Tonemap, cv.TonemapDrago, cv.TonemapMantiuk, tonemap
     %
 
     properties (SetAccess = private)

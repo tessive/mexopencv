@@ -14,8 +14,7 @@ classdef TonemapMantiuk < handle
     % > framework for contrast processing of high dynamic range images".
     % > ACM Transactions on Applied Perception (TAP), 3(3):286-308, 2006.
     %
-    % See also: cv.Tonemap, cv.TonemapDrago, cv.TonemapDurand,
-    %  cv.TonemapReinhard, tonemap
+    % See also: cv.Tonemap, cv.TonemapDrago, cv.TonemapReinhard, tonemap
     %
 
     properties (SetAccess = private)
