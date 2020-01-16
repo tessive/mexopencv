@@ -339,7 +339,6 @@
           <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.denoise_TVL1.html">cv.denoise_TVL1</tocitem>
           <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.Tonemap.html">cv.Tonemap</tocitem>
           <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.TonemapDrago.html">cv.TonemapDrago</tocitem>
-          <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.TonemapDurand.html">cv.TonemapDurand</tocitem>
           <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.TonemapReinhard.html">cv.TonemapReinhard</tocitem>
           <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.TonemapMantiuk.html">cv.TonemapMantiuk</tocitem>
           <tocitem image="HelpIcon.FUNCTION" target="matlab/cv.AlignMTB.html">cv.AlignMTB</tocitem>

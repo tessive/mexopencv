@@ -145,12 +145,10 @@ fprintf('HDR: min=%f, max=%f\n', min(hdr(:)), max(hdr(:)))
 % HDR image to 8-bit range preserving most details. It is the main goal of
 % tonemapping methods. We use tonemapper with bilateral filtering and set
 % 2.2 as the value for gamma correction.
-if false
-    tone = cv.TonemapDurand('Gamma',2.2);
-else
-    tone = cv.TonemapReinhard('Gamma',2.2, ...
-        'Intensity',-8, 'LightAdaptation',0.6, 'ColorAdaptation',0.5);
-end
+
+tone = cv.TonemapReinhard('Gamma',2.2, ...
+    'Intensity',-8, 'LightAdaptation',0.6, 'ColorAdaptation',0.5);
+
 tic
 ldr = tone.process(hdr);
 toc

@@ -318,7 +318,6 @@
 %   cv.denoise_TVL1                     - Primal-Dual algorithm to perform image denoising
 %   cv.Tonemap                          - Tonemapping algorithm used to map HDR image to 8-bit range
 %   cv.TonemapDrago                     - Tonemapping algorithm used to map HDR image to 8-bit range
-%   cv.TonemapDurand                    - Tonemapping algorithm used to map HDR image to 8-bit range
 %   cv.TonemapReinhard                  - Tonemapping algorithm used to map HDR image to 8-bit range
 %   cv.TonemapMantiuk                   - Tonemapping algorithm used to map HDR image to 8-bit range
 %   cv.AlignMTB                         - Aligns images of the same scene with different exposures

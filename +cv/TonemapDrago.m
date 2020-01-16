@@ -23,8 +23,7 @@ classdef TonemapDrago < handle
     % > In Computer Graphics Forum, volume 22, pages 419-426. Wiley Online
     % > Library, 2003.
     %
-    % See also: cv.Tonemap, cv.TonemapDurand, cv.TonemapReinhard,
-    %  cv.TonemapMantiuk, tonemap
+    % See also: cv.Tonemap, cv.TonemapReinhard, cv.TonemapMantiuk, tonemap
     %
 
     properties (SetAccess = private)

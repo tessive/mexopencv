@@ -1,8 +1,8 @@
 classdef Tonemap < handle
     %TONEMAP  Tonemapping algorithm used to map HDR image to 8-bit range
     %
-    % See also: cv.TonemapDrago, cv.TonemapDurand, cv.TonemapReinhard,
-    %  cv.TonemapMantiuk, tonemap
+    % See also: cv.TonemapDrago, cv.TonemapReinhard, cv.TonemapMantiuk,
+    % tonemap
     %
 
     properties (SetAccess = private)
